@@ -1543,16 +1543,12 @@ img {
 .modal-close:active::after {
   opacity: 0.1;
 }
-
-<<<<<<< HEAD
 .modal-close::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-=======
->>>>>>> 48ee3fa35dc6e7c36a275f7025a31542c0e2d234
 .modal-feedback input[type="text"] {
   width: 336px;
   font: inherit;
