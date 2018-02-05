@@ -377,19 +377,21 @@ img {
   text-align: right;
 }
 
-.filters-item label:hover {
+.filters-item label:hover,
+.filter-input:hover + label,
+.filter-input:focus + label {
   color: rgb(0, 0, 0);
 }
 
-.input-radio + label:hover::before,
-.input-radio + label:hover::after,
-.input-checkbox + label:hover::before,
-.input-checkbox + label:hover::after {
+.filter-input:hover + label::before,
+.filter-input:hover + label::after,
+.filter-input:focus + label::before,
+.filter-input:focus + label::after {
   opacity: 1;
 }
 
 .input-checkbox:disabled + label,
-.input-radio:disabled + label{
+.input-radio:disabled + label {
   color: rgba( 40, 49, 54, 0.3);
   cursor: default;
 }
@@ -794,7 +796,10 @@ img {
 
 #btn-1:checked ~ .slider-switches label:nth-child(1)::before,
 #btn-2:checked ~ .slider-switches label:nth-child(2)::before,
-#btn-3:checked ~ .slider-switches label:nth-child(3)::before{
+#btn-3:checked ~ .slider-switches label:nth-child(3)::before
+#btn-1:focus ~ .slider-switches label:nth-child(1)::before,
+#btn-2:focus ~ .slider-switches label:nth-child(2)::before,
+#btn-3:focus ~ .slider-switches label:nth-child(3)::before {
   border-color: #c2c2c2;
 }
 
