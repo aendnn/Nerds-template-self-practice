@@ -788,7 +788,7 @@ img {
 }
 
 #btn-1:checked ~ .slides-list #slide-1,
-#btn-2:checked ~ .slides-list #slide-2 ,
+#btn-2:checked ~ .slides-list #slide-2,
 #btn-3:checked ~ .slides-list #slide-3  {
   display: block;
 }
@@ -796,10 +796,7 @@ img {
 
 #btn-1:checked ~ .slider-switches label:nth-child(1)::before,
 #btn-2:checked ~ .slider-switches label:nth-child(2)::before,
-#btn-3:checked ~ .slider-switches label:nth-child(3)::before
-#btn-1:focus ~ .slider-switches label:nth-child(1)::before,
-#btn-2:focus ~ .slider-switches label:nth-child(2)::before,
-#btn-3:focus ~ .slider-switches label:nth-child(3)::before {
+#btn-3:checked ~ .slider-switches label:nth-child(3)::before {
   border-color: #c2c2c2;
 }
 
